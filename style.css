@@ -25,7 +25,7 @@ body{
 .card{
     background-color: #FFFFFF;
     min-height: 510px;
-    width: 70%;
+    max-width: 920px;
     border-radius: 23px;
     box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
     display: flex;
@@ -63,9 +63,11 @@ body{
     top: 230px;
 }
 .card-accordion{
-    width: 55%;
-    float: right;
+    width: 50%;
+    align-content: flex-end;
     padding: 60px;
+    padding-left: 110px;
+    padding-right: 0px;
 }
 .card-accordion li{
     border-bottom: solid #E8E8EA 1px ;
@@ -106,14 +108,16 @@ li{
     list-style: none;
 }
 
-@media screen and (max-width: 1050px) { 
+@media screen and (max-width: 1094px) { 
     .card{
         flex-direction: column;
         position: relative;
+        width: 70%;
     }
     .card-accordion{
         margin-top: 60px;
         width: 100%;
+        padding: 60px;
     }
     .card-accordion h1{
         text-align: center;
