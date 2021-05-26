@@ -14,10 +14,12 @@
 body{
     background: linear-gradient(var(--softviolet), var(--softblue));
     background-repeat: no-repeat;
-    min-height: 1080px;
+    min-height: 100vh;
     display: grid;
     place-items: center;
     font-family: 'Kumbh Sans', sans-serif;
+    padding-top: 130px;
+    padding-bottom: 130px;
 }
 
 .card{
@@ -86,6 +88,7 @@ button img{
     color: #4B4C5F;
     font-family: 'Kumbh Sans', sans-serif;
     width: 100%;
+    cursor: pointer;
 
 }
 .accordion-content{
@@ -121,8 +124,8 @@ li{
     .mobile-hero{
         display: inline;
         position: absolute;
-        left: 28%;
         top: -105px;
+        align-self: center;
     }
     
 }
